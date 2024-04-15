@@ -1,4 +1,4 @@
-/* Estilos de página de viajes */
+/* Estilos de página de viajes 
 *{
     outline: solid black;
 }
@@ -29,7 +29,7 @@ nav ul li {
     margin-right: 20px; /* margen hacia la derecha */
 }
 /* estilo a elenentos de vinculo ancla de nevagación*/
-nav ul li {
+nav ul li a{
     color:#fff; /* color a los elementosanchar */
-    text-decoration: none; /*quita subrayados*/
+    text-decoration: none; /* quita subrayados */
 }
