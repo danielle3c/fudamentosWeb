@@ -1,35 +1,79 @@
-/* Estilos de página de viajes 
+/* Estilos de pagina de viajes  
 *{
-    outline: solid black;
+    outline: solid rgb(255, 255, 255);
 }
-    */
-body {/* Selección de body */
-font-family:arial, sans-serif ; /* Cambia tipografia*/
-margin : 0; /* Elimina todo el margen predefinido*/
-padding: 0; /* Elimina todo el relleno de los elementos */
-}
-/*acá viene el estilo de una clase container */
-.container {
-width: 80%; /* establece el ancho del contenedor en un 80% porciento */
-margin: 0 auto; /*centra horizontalmente el cotenedor */
-}
-/*estilo de en cabezado */
-header {
-    background-color: #333; /* establece el color de fondo */
-    color: #fff; /* establece rl color el color del texto */
-    padding: 20px 0; /* añade relleno superior e inferior */
+*/
+body { /* Selección de body */
+    font-family:Arial, sans-serif ; /* Cambia tipografia */
+    margin: 0; /* Elimina todo el margen predefinido */
+    padding: 0; /* Elimina todo el relleno de los elementos */
+    }
+    /* Acá viene el estilo de una clase container */
+    .container {
+        width: 80%; /* Establece el ancho del contenedor en un 80% */
+        margin: 0 auto; /* Centra horizontalmente el contenedor */
+    }
+    /* Estilo de encabezado */
+    header {
+        background-color: #333; /* Establece el color de fondo */
+        color: #fff; /* Establece el color del texto */
+        padding: 20px 0; /* Añade relleno superior e inferior */
+    }
+    
+    header h1{
+        margin: 0; /* Elimina el margen por defecto del título */
+    }
+    /* Estilo de elemento de lista */
+    nav ul li{
+        display:inline; /* Alinea los elementos */
+        margin-right: 20px; /* Margen hacia la derecha */
+    }
+    /* Estilo a elementos de vinculo ancla de navegacion */
+    nav ul li a{
+        color:#fff; /* Color a elemento Anchor */
+        text-decoration: none; /* Quita subrayado de enlaces */
+    }
+    
+    section {
+        padding: 40px 0; /* Añade relleno superior e inferior  */
+    }
+    
+    #banner{
+        background-image: url('https://cdn.turkishairlines.com/m/4c0bb41e56e1e9e5/original/1400x400-kas-header-jpg.jpg/1500x500');/*Establece la imagen de fondo del banner*/
+        background-size: cover; /* Ajusta la imagen al área del banner */
+        color: #fff; /* Establece color del texto */
+        text-align: center; /* Centra el texto del banner*/
+        padding: 150px 0; /* Define relleno superior e inferior */
+    }
+    #banner h2{
+        fonnt-size: 36px; /* Establece tamaño de h2 */
+    }
+    #banner p{
+        font-size: 18px; /* Establece tamaño de p */
+        margin-bottom: 20px; /* Define margen inferior*/
+    }
+    
+    .btn{
+        background-color: #007bff; /* Color fondo boton */
+        color: #fff; /* Color del texto del boton */
+        padding: 10px 20px; /* Relleno del boton */
+        text-decoration: none; /* Quita decoración de enlace*/
+    }
+    /* Estilo cuando pasa puntero sobre el boton */
+    .btn:hover {
+        background-color: #0056b3; /* Establece color de fondo en hover boton */
+    }
+
+.destinos-container{
 }
 
-header h1 {
-    margin: 0; /* eleimina por defecto del título */
+.destinos{
+    width: calc(33.33% - 20px); /* establece el ancho de cada destinos menos al espacio entre los destinos*/
+
 }
-/* estilo de elemento de lista  */
-nav ul li {
-    display: inline; /* aalínea los elementos */
-    margin-right: 20px; /* margen hacia la derecha */
-}
-/* estilo a elenentos de vinculo ancla de nevagación*/
-nav ul li a{
-    color:#fff; /* color a los elementosanchar */
-    text-decoration: none; /* quita subrayados */
-}
+    footer{
+        background-color: #333; /* Establece color fondo de footer */
+        color: #fff; /* Establece color de texto de footer */
+        text-align: center; /* Centra el texto */
+        padding: 20px 0; /* Añade relleno superior e inferior */
+    }                                                                      
