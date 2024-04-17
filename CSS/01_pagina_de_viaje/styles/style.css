@@ -39,14 +39,14 @@ body { /* Selección de body */
     }
     
     #banner{
-        background-image: url('https://cdn.turkishairlines.com/m/4c0bb41e56e1e9e5/original/1400x400-kas-header-jpg.jpg/1500x500');/*Establece la imagen de fondo del banner*/
+        background-image: url('https://via.placeholder.com/1500x500');/*Establece la imagen de fondo del banner*/
         background-size: cover; /* Ajusta la imagen al área del banner */
         color: #fff; /* Establece color del texto */
         text-align: center; /* Centra el texto del banner*/
-        padding: 150px 0; /* Define relleno superior e inferior */
+        padding: 100px 0; /* Define relleno superior e inferior */
     }
     #banner h2{
-        fonnt-size: 36px; /* Establece tamaño de h2 */
+        font-size: 36px; /* Establece tamaño de h2 */
     }
     #banner p{
         font-size: 18px; /* Establece tamaño de p */
@@ -63,31 +63,73 @@ body { /* Selección de body */
     .btn:hover {
         background-color: #0056b3; /* Establece color de fondo en hover boton */
     }
-
-.destinos-container{
-    display: flex; 
-        justify-content: space-between /* distrubuye uniforme los elemntos 
-        flex-wrap: wrap; /* si los elementos caben en la misma linea agraga  una nueva linea agraga con estos elementos extra*/ 
-}
-.destinos{
-    width: calc(33.33% - 20px); /* establece el ancho de cada destinos menos al espacio entre los destinos*/
-    margin-bottom: 20px; /* define el margen inferior*/
-    text-align: center; /* centra el texto */
-}
-.destinos img{
-    width: 100%; /* establece el ancho de la imagen  ajustando  al elemento  que contiene*/
-    border-radius: 8px; /* genera un borde rodondea*/
-}
-
-.destinos h3{
-margin-top: 10px; /* agrega ditancias entre imagen y h3*/
-}
-.destinosp{
-    margin-top: 10px; /* agrega distancia superior entre h3 y parrafo*/
-}
+    
+    .destinos-container{
+        display: flex; /* Utiliza flexbox para alinear elementos */
+        justify-content: space-between; /* Distribuye uniformemenente los elementos */
+        flex-wrap: wrap; /* Si los elementos no caben en la misma línea, agrega una nueva linea con estos elementos extras */
+    }
+    .destino{
+        width: calc(33.33% - 20px); /* Establece el ancho de cada destino menos el espacio entre los destinos */
+        margin-bottom: 20px; /* Define el margen inferior*/
+        text-align: center; /* Centra el texto */
+    }
+    
+    .destino img{
+        width: 100%; /* Establece el ancho de la imagen ajustandola al elemento que la contiene */
+        border-radius: 8px; /* Agrega esquinas redondeadas */
+    }
+    .destino h3{
+        margin-top:10px; /* Agrega distancia entre imagen y h3 */
+    }
+    .destino p{
+        margin-top:10px; /* Agrega distancia superior entre h3 y p */
+    }
+    
     footer{
         background-color: #333; /* Establece color fondo de footer */
         color: #fff; /* Establece color de texto de footer */
         text-align: center; /* Centra el texto */
         padding: 20px 0; /* Añade relleno superior e inferior */
-    }                                                                      
+    }
+    
+    /* aqui va el estilo del formulario de contacto*/
+
+    #contacto{
+        padding:40px 0;
+    }
+    
+    #contacto .container{
+        text-align: center;
+    }
+
+    #contacto h2{
+        margin-bottom: 20px;
+    }
+    #contacto form{
+    max-width: 500px; /* establece el encho máximo del elemento */ 
+    margin: 0 auto; /*centra horozontalmente dentro de contenedor */
+    padding: 20px;
+    background-color: burlywood ;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0, 0, 1); /* establece una sombra de formulario */
+    }
+    #contacto label {
+        display: block; /* etiqueta en bloque */
+        margin-bottom: 10px ;
+        font-weight: bold; /*establece fuente en negrita */
+    }
+        #contacto input , #contacto textarea{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            box-sizing: border-box ; /*incluye al padding y el borde de ancho */
+        }
+
+        #contacto textarea {
+            resize: vertical; /*permite redimensinar verticalmene el texto*/
+        }
+        
+        
