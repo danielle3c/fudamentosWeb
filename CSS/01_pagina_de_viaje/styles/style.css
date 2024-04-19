@@ -131,7 +131,33 @@ body { /* Selección de body */
         #contacto textarea {
             resize: vertical; /*permite redimensinar verticalmene el texto*/
         }
-        /*el de hoteles de martin */
+
+/*el de hoteles de martin */
+.hoteles img {
+    width: 40%;
+    border-radius: 8px;
+}
+
+.hoteles{
+    width: calc(33.33% - 20px); /* Establece el ancho de cada destino menos el espacio entre los destinos */
+    margin-bottom: 20px; /* Define el margen inferior*/
+    text-align: center; /* Centra el texto */
+}
+
+#banner_2{
+    background-image: url('https://www.altiplanico.cl/wp-content/uploads/2011/12/atardecer.jpg');/*Establece la imagen de fondo del banner*/
+    background-size: cover; /* Ajusta la imagen al área del banner */
+    color: #fff; /* Establece color del texto */
+    text-align: center; /* Centra el texto del banner*/
+    padding: 100px 0; /* Define relleno superior e inferior */
+}
+#banner_2 h2{
+    font-size: 36px; /* Establece tamaño de h2 */
+}
+#banner_2 p{
+    font-size: 18px; /* Establece tamaño de p */
+    margin-bottom: 20px; /* Define margen inferior*/
+}
         /* el seguro de lenneth */
         /* destinos de ariel*/
         /* yo es paquete */
