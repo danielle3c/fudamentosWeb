@@ -1,6 +1,6 @@
 /* Estilos de pagina de viajes  
 *{
-    outline: solid rgb(255, 255, 255);
+    outline: solid black;
 }
 */
 body { /* Selección de body */
@@ -19,7 +19,7 @@ body { /* Selección de body */
         color: #fff; /* Establece el color del texto */
         padding: 20px 0; /* Añade relleno superior e inferior */
     }
-    
+   
     header h1{
         margin: 0; /* Elimina el margen por defecto del título */
     }
@@ -36,6 +36,7 @@ body { /* Selección de body */
     
     section {
         padding: 40px 0; /* Añade relleno superior e inferior  */
+        text-align: center;
     }
     
     #banner{
@@ -134,6 +135,42 @@ body { /* Selección de body */
         /*el de hoteles de martin */
         /* el seguro de lenneth */
         /* destinos de ariel*/
+        .destinos-container{
+            display: flex; /* Utiliza flexbox para alinear elementos */
+            justify-content: space-between; /* Distribuye uniformemenente los elementos */
+            flex-wrap: wrap; /* Si los elementos no caben en la misma línea, agrega una nueva linea con estos elementos extras */
+        }
+        #destino{
+            padding:40px 0;
+        }
+        #destinos {
+            display: flex; /* Utiliza flexbox para alinear elementos */
+            justify-content: space-between; /* Distribuye uniformemenente los elementos */
+            flex-wrap: wrap;
+        }
+        .destino img {
+            width: 80%;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            transition: all 0.3s;
+            filter: grayscale(0%);
+        }
+        
+        .destino:hover img {
+            transform: scale(1.05);
+            filter: grayscale(40%);
+        }
+        
+        #destinos container{
+            text-align: center;
+        }
+
+        .titulo {
+            text-align: center;
+            background-color: #333;
+        }
+            
+        
         
         /* yo es paquete */
         
