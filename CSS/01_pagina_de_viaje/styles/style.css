@@ -140,12 +140,16 @@ body { /* Selección de body */
 }
 
 .hoteles img {
-    width: 80%;
+    width: 85%;
     border-radius: 8px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     transition: all 0.3s;
     filter: grayscale(0%);
     margin-left: 50px;
+}
+
+.hoteles h2 {
+    text-align: center;
 }
 
 .hoteles:hover img {
@@ -154,7 +158,7 @@ body { /* Selección de body */
 }
 
 .hoteles {
-    width: calc(33.33% - 20px); /* Establece el ancho de cada destino menos el espacio entre los destinos */
+    width: calc(30.30% - 10px); /* Establece el ancho de cada destino menos el espacio entre los destinos */
     margin-bottom: 20px; /* Define el margen inferior*/
 }
 /*banner*/
@@ -177,10 +181,6 @@ body { /* Selección de body */
 #hotel{
     padding:40px 0;
     color: #fff;
-}
-
-#hotel .hotel{
-    text-align: center;
 }
 
 #hotel h2{
@@ -219,7 +219,12 @@ box-shadow: 0 0 10px rgb(0, 0, 1); /* establece una sombra de formulario */
 }
 
 #selecion {
-    padding: 5px 40px
+    padding: 5px 40px;
+    margin-bottom: 20px;
+}
+
+#hotel div form input {
+    text-align: left;
 }
 
         /* el seguro de lenneth */
