@@ -145,6 +145,7 @@ body { /* Selección de body */
     margin-bottom: 40px;
     transition: all 0.3s;
     filter: grayscale(0%);
+    margin-left: 50px;
 }
 
 .hoteles:hover img {
@@ -206,6 +207,20 @@ box-shadow: 0 0 10px rgb(0, 0, 1); /* establece una sombra de formulario */
         border-radius: 5px;
         box-sizing: border-box ; /*incluye al padding y el borde de ancho */
     }
+
+.btn2 {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.btn2 :hover {
+    background-color: #706e6e;
+}
+
+#selecion {
+    padding: 5px 40px
+}
 
         /* el seguro de lenneth */
         /* destinos de ariel*/

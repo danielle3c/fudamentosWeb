@@ -34,18 +34,18 @@
             <form>
                 <h2>Destino1</h2>
                 <label for="hotel">Hoteles</label>
-                <select name="hotel" id="">
+                <select name="hotel" id="selecion" required>
+                    <option value="">hoteles</option>
                     <option value="">hotel1</option>
                     <option value="">hotel2</option>
                     <option value="">hotel3</option>
                     <option value="">hotel4</option>
                     <option value="">hotel5</option>
-                    <option value="">hotel6</option>
                 </select>
                 <label for="fecha">Fecha de alojamiento:</label>
-                <input type="date" name="fecha">
-                <label for="desalojo">Fecha de desalojamiento:</label>
-                <input type="date" name="desalojo">
+                <input type="date" name="fecha" required>
+                <label for="fechamax">Hasta</label>
+                <input type="date" name="fechamax" required>
                 <button class="btn2" type="submit">Enviar</button>
             </form>
         </div>
