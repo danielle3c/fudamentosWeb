@@ -1,6 +1,6 @@
-/* Estilos de pagina de viajes  
+/* Estilos de pagina de viajes 
 *{
-    outline: solid rgb(255, 255, 255);
+    outline: solid rgb(0, 0, 0);
 }
 */
 body { /* Selección de body */
@@ -133,31 +133,80 @@ body { /* Selección de body */
         }
 
 /*el de hoteles de martin */
-.hoteles img {
-    width: 40%;
-    border-radius: 8px;
+#hoteles {
+    display: flex; /* Utiliza flexbox para alinear elementos */
+    justify-content: space-between; /* Distribuye uniformemenente los elementos */
+    flex-wrap: wrap;
 }
 
-.hoteles{
+.hoteles img {
+    width: 80%;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    transition: all 0.3s;
+    filter: grayscale(0%);
+}
+
+.hoteles:hover img {
+    transform: scale(1.05);
+    filter: grayscale(40%);
+}
+
+.hoteles {
     width: calc(33.33% - 20px); /* Establece el ancho de cada destino menos el espacio entre los destinos */
     margin-bottom: 20px; /* Define el margen inferior*/
-    text-align: center; /* Centra el texto */
 }
-
+/*banner*/
 #banner_2{
     background-image: url('https://www.altiplanico.cl/wp-content/uploads/2011/12/atardecer.jpg');/*Establece la imagen de fondo del banner*/
-    background-size: cover; /* Ajusta la imagen al área del banner */
-    color: #fff; /* Establece color del texto */
-    text-align: center; /* Centra el texto del banner*/
-    padding: 100px 0; /* Define relleno superior e inferior */
+    background-size: cover; 
+    color: #fff;
+    text-align: center; 
+    padding: 100px 0; 
 }
+
 #banner_2 h2{
-    font-size: 36px; /* Establece tamaño de h2 */
+    font-size: 36px; 
 }
 #banner_2 p{
-    font-size: 18px; /* Establece tamaño de p */
-    margin-bottom: 20px; /* Define margen inferior*/
+    font-size: 18px; 
+    margin-bottom: 20px; 
 }
+/*reserva de hotel*/
+#hotel{
+    padding:40px 0;
+    color: #fff;
+}
+
+#hotel .hotel{
+    text-align: center;
+}
+
+#hotel h2{
+    margin-bottom: 20px;
+}
+#hotel form{
+max-width: 500px; /* establece el encho máximo del elemento */ 
+margin: 0 auto; /*centra horozontalmente dentro de contenedor */
+padding: 20px;
+background-color: #3d3d3d ;
+border-radius: 8px;
+box-shadow: 0 0 10px rgb(0, 0, 1); /* establece una sombra de formulario */
+}
+#hotel label {
+    display: block; /* etiqueta en bloque */
+    margin-bottom: 10px ;
+    font-weight: bold; /*establece fuente en negrita */
+}
+#hotel input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        box-sizing: border-box ; /*incluye al padding y el borde de ancho */
+    }
+
         /* el seguro de lenneth */
         /* destinos de ariel*/
         /* yo es paquete */
