@@ -71,7 +71,7 @@ body { /* Selección de body */
         flex-wrap: wrap; /* Si los elementos no caben en la misma línea, agrega una nueva linea con estos elementos extras */
     }
     .destino{
-        width: calc(33.33% - 20px); /* Establece el ancho de cada destino menos el espacio entre los destinos */
+        width: calc(33.33% - 40px); /* Establece el ancho de cada destino menos el espacio entre los destinos */
         margin-bottom: 20px; /* Define el margen inferior*/
         text-align: center; /* Centra el texto */
     }
@@ -171,6 +171,19 @@ body { /* Selección de body */
         }
             
         
-        
+        #dest{
+            background-image: url('https://assets.airtrfx.com/media-em/h2/cities/temuco-ZCO.jpg');/*Establece la imagen de fondo del banner*/
+            background-size: cover; /* Ajusta la imagen al área del banner */
+            color: #fff; /* Establece color del texto */
+            text-align: center; /* Centra el texto del banner*/
+            padding: 100px 0; /* Define relleno superior e inferior */
+        }
+        #dest h2{
+            font-size: 36px; /* Establece tamaño de h2 */
+        }
+        #dest p{
+            font-size: 18px; /* Establece tamaño de p */
+            margin-bottom: 20px; /* Define margen inferior*/
+        }
         /* yo es paquete */
         
