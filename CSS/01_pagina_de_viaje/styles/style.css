@@ -135,3 +135,91 @@ body { /* Selección de body */
         /* el seguro de lenneth */
         /* destinos de ariel*/
         /* yo es paquete */
+        #ds{
+            background-image: url('https://blog.nmviajes.com/wp-content/uploads/2018/10/iStock_000025713973Medium-1500x500.jpg');/*Establece la imagen de fondo del banner*/
+            background-size: cover; /* Ajusta la imagen al área del banner */
+            color: #fff; /* Establece color del texto */
+            text-align: center; /* Centra el texto del banner*/
+            padding: 100px 0; /* Define relleno superior e inferior */
+        }
+        #ds h2{
+            font-size: 36px; /* Establece tamaño de h2 */
+        }
+        #ds p{
+            font-size: 18px; /* Establece tamaño de p */
+            margin-bottom: 20px; /* Define margen inferior*/
+        }
+        #paquete{
+            display: flex; /* Utiliza flexbox para alinear elementos */
+            justify-content: space-between; /* Distribuye uniformemenente los elementos */
+            flex-wrap: wrap; /* Si los elementos no caben en la misma línea, agrega una nueva linea con estos elementos extras */
+        }
+
+        .px {
+            transition: all 0.3s;
+            filter: grayscale(0%);
+        }
+        .px:hover {
+            transform: scale(1.05);
+            filter: grayscale(40%);
+        }
+
+        #pr{
+        background-image: url('https://assets.airtrfx.com/media-em/h2/countries/colombia-CO.jpg');/*Establece la imagen de fondo del banner*/
+        background-size: cover; /* Ajusta la imagen al área del banner */
+        color: #fff; /* Establece color del texto */
+        text-align: center; /* Centra el texto del banner*/
+        padding: 100px 0; /* Define relleno superior e inferior */
+    }
+    #pr h2{
+        font-size: 36px; /* Establece tamaño de h2 */
+    }
+    #pr p{
+        font-size: 18px; /* Establece tamaño de p */
+        margin-bottom: 20px; /* Define margen inferior*/
+    }
+        #sd {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt4JBeFi3VZ4XO-URtduzEFXZBo8LkgIEbY13TDGfsEQ&s');/*Establece la imagen de fondo del banner*/
+            background-size: cover; /* Ajusta la imagen al área del banner */
+            color: #fff; /* Establece color del texto */
+            text-align: center; /* Centra el texto del banner*/
+            padding: 100px 0; /* Define relleno superior e inferior */
+        }
+        #sd h2{
+            font-size: 36px; /* Establece tamaño de h2 */
+        }
+        #sd p{
+            font-size: 18px; /* Establece tamaño de p */
+            margin-bottom: 20px; /* Define margen inferior*/
+        }
+
+        #fg {
+            background-image: url('https://assets.turismocity.com/cdn-cgi/image/format=auto,width=1400,fit=scale-down/img/1681222602221_dicas-de-viagem-para-a-Disney-castelo.jpg');/*Establece la imagen de fondo del banner*/
+            background-size: cover; /* Ajusta la imagen al área del banner */
+            color: #fff; /* Establece color del texto */
+            text-align: center; /* Centra el texto del banner*/
+            padding: 100px 0; /* Define relleno superior e inferior */
+        }
+        #fg h2{
+            font-size: 36px; /* Establece tamaño de h2 */
+        }
+        #fg p{
+            font-size: 18px; /* Establece tamaño de p */
+            margin-bottom: 20px; /* Define margen inferior*/
+        }
+
+        #ns {
+            background-image: url('https://www.sernatur.cl/wp-content/uploads/2019/11/1500x500.jpg');/*Establece la imagen de fondo del banner*/
+            background-size: cover; /* Ajusta la imagen al área del banner */
+            color: #fff; /* Establece color del texto */
+            text-align: center; /* Centra el texto del banner*/
+            padding: 100px 0; /* Define relleno superior e inferior */
+        }
+        #ns h2{
+            font-size: 36px; /* Establece tamaño de h2 */
+        }
+        #ns p{
+            font-size: 18px; /* Establece tamaño de p */
+            margin-bottom: 20px; /* Define margen inferior*/
+        }
+
