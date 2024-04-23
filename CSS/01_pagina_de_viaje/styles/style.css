@@ -140,7 +140,7 @@ body { /* Selección de body */
 }
 
 .hoteles img {
-    width: 85%;
+    width: 80%;
     border-radius: 8px;
     margin-bottom: 20px;
     transition: all 0.3s;
