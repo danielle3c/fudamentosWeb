@@ -33,7 +33,7 @@ body { /* Selección de body */
         color:#fff; /* Color a elemento Anchor */
         text-decoration: none; /* Quita subrayado de enlaces */
     }
-    
+
     section{
         padding: 40px 0; /* Añade relleno superior e inferior  */
         text-align: center;
@@ -195,4 +195,6 @@ body { /* Selección de body */
             margin-bottom: 20px; /* Define margen inferior*/
         }
         /* yo es paquete */
+        
+        /*ggtrgt*/
         
