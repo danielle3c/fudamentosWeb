@@ -223,7 +223,7 @@ body { /* Selección de body */
             margin-bottom: 20px; /* Define margen inferior*/
         }
 
-        #internacionales {
+        #internacionales02 {
             display: flex; /* Utiliza flexbox para alinear elementos */
             justify-content: space-between; /* Distribuye uniformemenente los elementos */
             flex-wrap: wrap; /* Si los elementos no caben en la misma línea, agrega una nueva linea con estos elementos extras */
@@ -234,14 +234,14 @@ body { /* Selección de body */
             text-align: center; /* Centra el texto */
         }
         
-        .internacionales img{
+        .internacionales02 img{
             width: 100%; /* Establece el ancho de la imagen ajustandola al elemento que la contiene */
             border-radius: 8px; /* Agrega esquinas redondeadas */
         }
-        .internacionales h3{
+        .internacionales02 h3{
             margin-top:10px; /* Agrega distancia entre imagen y h3 */
         }
-        .internacionales p{
+        .internacionales02 p{
             margin-top:10px; /* Agrega distancia superior entre h3 y p */
         }
         
