@@ -19,7 +19,7 @@ body { /* Selección de body */
         color: #fff; /* Establece el color del texto */
         padding: 20px 0; /* Añade relleno superior e inferior */
     }
-   
+
     header h1{
         margin: 0; /* Elimina el margen por defecto del título */
     }
@@ -44,7 +44,16 @@ body { /* Selección de body */
         background-size: cover; /* Ajusta la imagen al área del banner */
         color: #fff; /* Establece color del texto */
         text-align: center; /* Centra el texto del banner*/
-        padding: 100px 0; /* Define relleno superior e inferior */
+        padding: 100px 0; /* Define relleno superior e inferior */}
+
+        #ini{
+            background-image: url("https://theroutefilms.com/wp-content/uploads/2019/03/Globos_Portada_2-1500x500.jpg");/*Establece la imagen de fondo del banner*/
+            background-size: cover; /* Ajusta la imagen al área del banner */
+            color: #fff; /* Establece color del texto */
+            text-align: center; /* Centra el texto del banner*/
+            padding: 100px 0; /* Define relleno superior e inferior */
+
+
     }
     #banner h2{
         font-size: 36px; /* Establece tamaño de h2 */
