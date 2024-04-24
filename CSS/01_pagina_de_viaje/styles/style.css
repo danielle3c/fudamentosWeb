@@ -223,8 +223,27 @@ body { /* Selección de body */
             margin-bottom: 20px; /* Define margen inferior*/
         }
 
-
-
+        #internacionales {
+            display: flex; /* Utiliza flexbox para alinear elementos */
+            justify-content: space-between; /* Distribuye uniformemenente los elementos */
+            flex-wrap: wrap; /* Si los elementos no caben en la misma línea, agrega una nueva linea con estos elementos extras */
+        }
+        .internacionales{
+            width: calc(33.33% - 20px); /* Establece el ancho de cada destino menos el espacio entre los destinos */
+            margin-bottom: 20px; /* Define el margen inferior*/
+            text-align: center; /* Centra el texto */
+        }
+        
+        .internacionales img{
+            width: 100%; /* Establece el ancho de la imagen ajustandola al elemento que la contiene */
+            border-radius: 8px; /* Agrega esquinas redondeadas */
+        }
+        .internacionales h3{
+            margin-top:10px; /* Agrega distancia entre imagen y h3 */
+        }
+        .internacionales p{
+            margin-top:10px; /* Agrega distancia superior entre h3 y p */
+        
 /*el de hoteles de martin */
 #hoteles {
     display: flex; /* Utiliza flexbox para alinear elementos */
@@ -319,3 +338,5 @@ box-shadow: 0 0 10px rgb(0, 0, 1); /* establece una sombra de formulario */
 #hotel div form input {
     text-align: left;
 }
+
+
