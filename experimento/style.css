@@ -42,5 +42,5 @@
     margin: 10px;
     }
     .row {
-    / *  Añade aqui el display:flex;*/
+    display:flex;
     }
