@@ -4,21 +4,32 @@
 }
 
 h1  {
-    background-color: #000000; /* Establece el color de fondo */
-    color: #2e38c5; /* Establece el color del texto */
-    padding: 10px 0; /* Añade relleno superior e inferior */}
     
+    background-color: #000000; /* Establece el color de fondo */
+    color: #ececec; /* Establece el color del texto */
+    height: 50px;
+    width: 1150ppx;}
     span {
-        color: #ececec;
+        color: 		#00FFFF;
+        font-style: inherit;
+        
     }
 
-    h3  {
-        background-color: #000000; /* Establece el color de fondo */
-        color: #2e38c5; /* Establece el color del texto */
-        padding: 10px 0; /* Añade relleno superior e inferior */}
+    h2  {
+        background-color: #663399; /* Establece el color de fondo */
+        color: #e4e0eb; /* Establece el color del texto */
+        height: 50px;
+    width:1150ppx;
+    text-align: center; 
+    font-style: normal;}
         
-        h5  {
-            background-color: #000000; /* Establece el color de fondo */
+        h3 {
+            background-color: #9fc5f8; /* Establece el color de fondo */
             color: #2e38c5; /* Establece el color del texto */
-            padding: 10px 0; /* Añade relleno superior e inferior */}
+            height: 50px;
+    width: 1150px;
+    text-decoration-line: underline;
+    text-align: right;
+    
+}
             
