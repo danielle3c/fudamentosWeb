@@ -1,0 +1,30 @@
+.container{
+    width: 900px;
+    margin: 0 auto;
+    }
+    h1{
+        text-align: center;
+        color: #363646;
+    }
+    .row{
+        background-color: aqua;
+        height: 190px;
+        width:1000px ;
+        margin: 10px;
+    }
+    #celeste{
+        background-color: #5ac7f0;
+        
+    }
+    #pink{
+        background-color: #d4aac9;
+    }
+    #blanco{
+        background-color:#f7f9fc ;
+    }
+    img{
+        height: 150px;
+        width: 150px;
+        margin: 30px;
+        margin-right: 150px;
+    }

@@ -1,0 +1,58 @@
+/* Fondo negro para toda la página */
+body {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Aumentamos a 6 columnas para más espacio lateral */
+    grid-template-rows: repeat(5, 1fr); /* Aumentamos a 5 filas para mejor ajuste */
+    gap: 5px; /* Espacio entre los bloques */
+    width: 80vw; /* Reducimos el ancho del área total al 80% del viewport */
+    height: 80vh; /* Reducimos el alto del área total al 80% del viewport */
+    margin: 0 auto; /* Centramos el diseño */
+    padding: 20px;
+    box-sizing: border-box; /* Para asegurarnos de que el padding no afecte el tamaño */
+}
+
+/* Definición de cada color */
+.red {
+    background-color: rgb(229, 0, 0);
+    grid-column: 2 / 5; /* Ocupa de la segunda a la cuarta columna */
+    grid-row: 1 / 3; /* Ocupa las dos primeras filas */
+}
+
+.blue {
+    background-color: rgb(0, 102, 255); /* Azul más brillante */
+    grid-column: 1 / 2; /* En la primera columna (lado izquierdo) */
+    grid-row: 5 / 6; /* En la fila inferior */
+}
+
+.yellow {
+    background-color: rgb(255, 221, 0);
+    grid-column: 5 / 6; /* En la penúltima columna (lado derecho) */
+    grid-row: 5 / 6; /* En la fila inferior */
+}
+
+.white-large {
+    background-color: rgb(255, 255, 255);
+    grid-column: 2 / 5; /* Ocupa de la segunda a la cuarta columna */
+    grid-row: 3 / 5; /* Reduce su tamaño a dos filas */
+}
+
+.white-small {
+    background-color: rgb(255, 255, 255);
+    grid-column: 5 / 6; /* En la penúltima columna (lado derecho) */
+    grid-row: 1 / 3; /* Ocupa las dos primeras filas */
+}
+
+.white {
+    background-color: rgb(250, 236, 236);
+    grid-column: 1 / 2; /* En la primera columna (lado izquierdo) */
+    grid-row: 1 / 3; /* Ocupa las dos primeras filas */
+}
+
+.white1
+{
+    background-color: rgb(250, 236, 236);
+    margin: 20px;
+    grid-column: 1 / 2; /* En la primera columna (lado izquierdo) */
+    grid-row: 4/ 5; /* Ocupa las dos primeras filas */
+}
