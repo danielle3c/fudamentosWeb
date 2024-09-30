@@ -2,7 +2,6 @@
     background-color: #d52414;
     height: 400px;
     width: 500px;
-    border-color: black ;
     margin-bottom: 10px;
 }
 
@@ -42,7 +41,7 @@
     background-color: #efefef;
     width: 50px;
     height: 50px;
-    align-self: 6 ;
+    align-self: 6px ;
     margin-right: 500px;
     margin-top: 430px;
 
@@ -52,17 +51,22 @@
     background-color: yellow;
     width: 50px;
     height: 50px;
-    align-self: 6 ;
-    margin-top: 430px;
+    align-self: 60px ;
+    margin-top: 30px;
+    margin-right: 809px;
     
 }
 
 body {
     background-color: black;
+    height: 570px;
+    width: 570px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 #cuerpo {
-    background-color: black;
     height: 570px;
     width: 570px;
     display: flex;
