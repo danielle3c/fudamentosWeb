@@ -1,45 +1,51 @@
+*{
+    outline: solid 1px white;
+}
+body {
+    background-color: black;
+}
+
+#cuerpo {
+    margin: 0 auto;;
+    height: 570px;
+    width: 570px;
+    display: flex;
+}
+.left{
+flex:1;
+}
+.right{
+flex:3;
+}
 .rojo {
     background-color: #d52414;
-    height: 400px;
-    width: 500px;
+    height: 300px;
     margin-bottom: 10px;
 }
 
 .blanco {
-    background-color: #e3e1dc;
-    width: 130px;
+    background-color: #ffffff;
     height: 180px;
     margin-bottom: 20px;
-    margin-right: 20px;
-
-}
-
-.blanco2 {
-    background-color: #e3e1dc;
-    width: 130px;
-    height: 200px;
-    margin-bottom: 10px;
-    margin-right: 20px;
-
 }
 
 .azul {
     background-color: #02599d;
-    width: 130px;
+
     height: 150px;
     margin-top: 10px;
 }
 
 .blanco3 {
     background-color: #e8e5e8;
-    width: 330px;
+  
     height: 150px;
     margin-top: 10px;
 }
 
 .blanco4 {
     background-color: #efefef;
-    width: 50px;
+
     height: 50px;
     align-self: 6px ;
     margin-right: 500px;
@@ -49,7 +55,7 @@
 
 .amarillo {
     background-color: yellow;
-    width: 50px;
+ 
     height: 50px;
     align-self: 60px ;
     margin-top: 30px;
@@ -57,19 +63,3 @@
     
 }
 
-body {
-    background-color: black;
-    height: 570px;
-    width: 570px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-#cuerpo {
-    height: 570px;
-    width: 570px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
