@@ -1,7 +1,7 @@
 const datos = {
     nombre: "Democorp",
     direccion: "Los lobos # 8750, Santiago",
-    telefono: "+56 9 95830719",
+    telefono: "+56 9 9098384",
     email: "soporte@democorp.cl",
     website: "www.democorp.com"
 };

@@ -8,3 +8,9 @@ document.getElementById('botonBienvenida').addEventListener('click', function() 
         mensaje.textContent = 'Debe ingresar su nombre.';
     }
 });
+
+//boton Limpiar
+document.getElementById('botonLimpiar').addEventListener('click', function() {
+    document.getElementById('nombre').value =''; //limpia el texto en pantalla
+    document.getElementById('mensaje').textContent = ''; // limpia el mensaje en pantalla
+});
