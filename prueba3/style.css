@@ -1,3 +1,77 @@
-.profile-image{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.profile-card {
+    width: 450px; /* Agrandado de 400px a 450px */
+    background-color: white;
+    border-radius: 10px; /* Antes era 8px */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Antes era 0 4px 8px */
+}
+.profile-header {
+    background-color: #00a0d1;
+    height: 70px; /* Antes era 60px */
+    border-radius: 10px 10px 0 0; /* Antes era 8px */
+}
+.profile-picture {
+    width: 90px; /* Agrandado de 80px a 90px */
+    height: 90px; /* Agrandado de 80px a 90px */
+    border-radius: 50%;
+    border: 4px solid white; /* Antes era 3px */
+    position: relative;
+    top: -45px; /* Ajustado para compensar el tamaño aumentado */
+    left: 25px; /* Ajustado para compensar el tamaño aumentado */
+}
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.profile-content {
+    padding: 25px; /* Antes era 20px */
+    padding-top: 15px; /* Antes era 10px */
+    text-align: left;
+}
+.profile-content h2 {
+    font-size: 24px; /* Agrandado de 22px a 24px */
+    margin-bottom: 12px; /* Antes era 10px */
+}
+.profile-content p {
+    font-size: 18px; /* Agrandado de 16px a 18px */
+    margin-bottom: 10px; /* Antes era 8px */
+    color: #555;
+}
+.location {
+    display: flex;
+    align-items: center;
+}
+.location img {
+    width: 24px; /* Agrandado de 20px a 24px */
+    height: 28px; /* Agrandado de 25px a 28px */
+    margin-right: 10px; /* Antes era 8px */
+}
+.edit-profile {
+    font-size: 16px; /* Agrandado de 14px a 16px */
+    color: #0073b1;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+.edit-profile img {
+    width: 18px; /* Agrandado de 16px a 18px */
+    height: 18px; /* Agrandado de 16px a 18px */
+    margin-right: 6px; /* Antes era 5px */
+}
+.edit-profile:hover {
+    text-decoration: underline;
 }
 
