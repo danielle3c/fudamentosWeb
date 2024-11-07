@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo {
+    height: 40px;
+}
+
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: auto; 
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ff0000; 
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto; 
+    margin-right: 20px; 
+}
+
+.search-bar input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.btn {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ff0000;
+}
+
+.ubicacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #ffffff;
+    background-color: #333;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    justify-content: flex-start;
+}
+
+.ubicacion a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Main Content Image */
+.main-img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.main-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.delivery-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 40px 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.delivery-banner h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.delivery-banner button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #ff0000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.delivery-banner button:hover {
+    background-color: #ffe6e6;
+}
