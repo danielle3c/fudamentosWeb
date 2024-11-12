@@ -1,4 +1,4 @@
-
+/* Reiniciar márgenes y configuraciones básicas */
 * {
     margin: 0;
     padding: 0;
@@ -6,15 +6,16 @@
     font-family: Arial, sans-serif;
 }
 
-
+/* Configuración principal de la página */
 .pagina {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f9f9f9;
+    width: 100%;
 }
 
-
+/* Encabezado - Banner */
 .banner {
     display: flex;
     flex-direction: row;
@@ -26,12 +27,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 .logo {
     height: 40px;
 }
 
-
+/* Navegación */
 .nav-links {
     display: flex;
     flex-direction: row;
@@ -52,7 +52,7 @@
     color: #ff0000; 
 }
 
-
+/* Barra de búsqueda */
 .search-bar {
     display: flex;
     align-items: center;
@@ -69,32 +69,33 @@
     font-size: 16px;
 }
 
+/* Íconos */
 .icons {
     display: flex;
-    gap: 20px; /* O usa `margin-right` en los iconos si prefieres */
-    }
+    gap: 20px;
+}
 
 .icon-item {
-    text-align: center; /* Centra el contenido dentro de cada contenedor */
-    list-style: none; /* Quita los puntos de lista */
+    text-align: center; 
+    list-style: none; 
 }
 
-    .icon-item li {
-    margin-top: 5px; /* Añade un espacio entre la imagen y el subtítulo */
+.icon-item li {
+    margin-top: 5px; 
 }
 
-    .icon-item a {
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: #333; /* Cambia el color del texto */
-    font-size: 0.9em; /* Ajusta el tamaño del texto */
+.icon-item a {
+    text-decoration: none;
+    color: #333; 
+    font-size: 0.9em; 
 }
-
 
 .icon {
     width: 24px;
     height: 24px;
 }
 
+/* Botón Ingresar */
 .btn {
     padding: 8px 16px;
     background-color: #333;
@@ -102,12 +103,14 @@
     border: none;
     border-radius: 5px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .btn:hover {
     background-color: #ff0000;
 }
 
+/* Ubicación */
 .ubicacion {
     display: flex;
     flex-direction: row;
@@ -125,7 +128,7 @@
     text-decoration: none;
 }
 
-
+/* Imagen Principal */
 .main-img {
     display: flex;
     align-items: center;
@@ -139,34 +142,76 @@
     border-radius: 10px;
 }
 
-.delivery-banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ff0000;
-    color: #ffffff;
-    padding: 40px 0;
-    width: 100%;
-    text-align: center;
+/* Botón Ver Menú */
+.boton1 {
     margin-top: 20px;
 }
 
-.delivery-banner h1 {
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.delivery-banner button {
-    margin-top: 20px;
+.boton1 .btn-primary {
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #ffffff;
-    color: #ff0000;
+    background-color: #ff0000;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     font-weight: bold;
+    cursor: pointer;
 }
 
-.delivery-banner button:hover {
-    background-color: #ffe6e6;
+.boton1 .btn-primary:hover {
+    background-color: #cc0000;
+}
+
+/* Sección del Menú */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+.menu h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.imagenes-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.menu-item h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Hover efecto para los elementos del menú */
+.menu-item:hover {
+    transform: scale(1.05);
 }
