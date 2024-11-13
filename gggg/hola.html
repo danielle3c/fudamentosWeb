@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/formulario.ico">
+	<link rel="stylesheet" href="style.css">
+    <title>Registro de Personas</title>
+</head>
+<body>
+    <h1>Registro de Personas</h1>
+    <form id="form">
+	    <input type="text" id="rut" placeholder="RUT" required> <!--pone texto para escribir el rut en la pagina-->
+        <input type="text" id="nombre" placeholder="Nombre" required>  <!--pone texto para escribir el nombre en la pagina-->
+        <input type="text" id="apellidos" placeholder="Apellidos" required>  <!--pone texto para escribir el apellidos en la pagina-->
+        <input type="email" id="correo" placeholder="Correo Electrónico" required>  <!--pone texto para escribir el correo elctronico en la pagina-->
+        <input type="tel" id="celular" placeholder="N° de Celular" required>  <!--pone texto para escribir el celular en la pagina-->
+        <button type="submit">Agregar Persona</button> <!---agrega un boton pra despues de rellenar el formulario madar lo escristo a la informcion abojo-->
+    </form>
+
+    <table id="tablaPersonas"> <!---agrega una tablas pagina web-->
+
+        <thead>
+            <tr> <!---crea un pacio las columnas que podremos-->
+			    <th>RUT</th> <!--esta creado la columnas del rut  -->
+                <th>Nombre</th> <!--esta creado la columnas del nombre  -->
+                <th>Apellidos</th>  <!--esta creado la columnas del apellido  -->
+                <th>Correo Electrónico</th>  <!--esta creado la columnas del coreo  -->
+                <th>N° de Celular</th>  <!--esta creado la columnas del celular   -->
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+	<script src="Val.rut.js"></script>
+    <script src="Val_correo.js"></script>
+    <script src="Val.celular.js"></script>
+</body>
+</html>
