@@ -43,6 +43,7 @@ function rutExisteEnTabla(rut) {
     const tablaRUT = Array.from(document.querySelectorAll('#tablaPersonas tbody tr td:nth-child(1)'))
                          .map(td => td.textContent.trim()); // Crea un arreglo con el contenido de texto de cada celda de RUT, eliminando espacios en blanco
 
-    // Verifica si el RUT ya está en el arreglo; si existe, devuelve true 
+   // Verifica si el correo ya está en el erreglo; si existe, devuelve false no es valido y devuelve el rut en el regristro 
+    // Si no está en el arreglado, devuelve true y valida el rut para el regristro
     return tablaRUT.includes(rut);
 }
