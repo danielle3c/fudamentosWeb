@@ -97,14 +97,13 @@
     background-color: #ff0000;
 }
 
-/* Ubicación */
+
 .ubicacion {
     display: flex;
     align-items: center;
-    color: #ffffff;
     background-color: #333;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     font-weight: bold;
     justify-content: flex-start;
 }
@@ -125,7 +124,7 @@
     height: auto;
 }
 
-/* Menú */
+
 .menu-header {
     width: 100%;
     max-width: 1200px;
@@ -199,7 +198,7 @@
     transform: scale(1.05);
 }
 
-/* Footer */
+
 .footer {
     background-color: #f8f8f8;
     color: #333;
@@ -244,8 +243,22 @@
     color: #666;
 }
 
-.footer-social img, .footer-download img {
-    width: 24px;
+.footer-social {
+    display: flex;          
+    justify-content: flex-start;  
+    align-items: center;  
+    margin-left: 16px;      
+}
+
+.footer-social img {
+    width: 30px;            
+    margin: 0 8px;          
+    transition: opacity 0.3s; 
+}
+
+
+.footer-download img {
+    width: 140px;
     margin: 0 8px;
     transition: opacity 0.3s;
 }
