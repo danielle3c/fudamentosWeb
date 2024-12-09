@@ -1,0 +1,484 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;  /* Fondo oscuro */
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Header */
+.banner {
+    background-color: #000000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.home {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 50px;
+    padding: 5px 20px;
+    width: 450px;
+    position: relative;
+    cursor: pointer;
+}
+
+.search-bar input {
+    flex-grow: 1; /* Hace que el input ocupe el espacio restante */
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent; /* Fondo transparente */
+    color: white;
+    border-radius: 50px;
+    margin-left: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.search-bar .search-icon {
+    width: 20px; /* Ajusta el tamaño de la imagen */
+    height: 20px;
+    pointer-events: none; /* Evita que la imagen interfiera con el input */
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px; /* Espacio entre los elementos */
+}
+
+/* Elimina el margen del último elemento */
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #1db954;
+}
+
+.nav-links .btn {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-links .btn:hover {
+    background-color: #1ed760;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    
+
+
+
+    .nav-links .btn {
+        width: 100%;
+    }
+}
+
+/* Barra lateral */
+.parte1 {
+    background-color: #121212;
+    padding: 200px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%; 
+    overflow-y: auto;
+}
+
+.biblioteca li {
+    list-style-type: none;  /* Elimina los puntos de la lista */
+    padding: 0;             /* Elimina el espacio adicional a la izquierda */
+    margin: 0;              /* Elimina el margen por defecto */
+}
+
+.biblioteca li a {
+    text-decoration: none;  /* Elimina el subrayado del enlace */
+    color: white;           /* Color del texto */
+    font-size: 14px;        /* Tamaño de la fuente */
+}
+
+
+.biblioteca h2 {
+    font-size: 20px;
+    margin-bottom: 14px;
+    color: white;
+}
+
+.biblioteca p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.btn-lista .btn {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.nav-legal {
+    list-style: none;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-legal li {
+    margin-bottom: 15px;
+}
+
+.nav-legal li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.btn-espanol .btn {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Sección principal */
+.parte2 {
+    padding: 40px 10px;
+    background-color: #121212;
+    margin-left: 300px; /* Para que se acomode al lado de la barra lateral */
+}
+
+h1, h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Contenedor de las imágenes y el texto (hace que estén en línea horizontal) */
+.music-container {
+    position: relative;
+    width: 170px; /* Tamaño ajustado del contenedor */
+    height: 270px; /* Altura ajustada */
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-flex; /* Usamos inline-flex para alinearlos en línea horizontal */
+    flex-direction: column; /* Establece la dirección de los elementos dentro de este contenedor */
+    justify-content: flex-start; /* Alinea el contenido en la parte superior */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 20px; /* Espacio adicional debajo del texto */
+}
+
+/* Imagen principal */
+.music-container img {
+    width: 100%;
+    height: 70%; /* Deja más espacio para el texto debajo */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Texto debajo de la imagen */
+.music-container p {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 10px; /* Añade un margen superior para separación */
+    padding: 0 10px; /* Añade un poco de espacio a los lados del texto */
+}
+
+/* Alineación horizontal para las imágenes y los textos */
+.music-container-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben en una línea */
+    justify-content: center; /* Centra los elementos */
+}
+
+/* Efecto al pasar el mouse */
+.music-container:hover img {
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+.music-container:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del contenedor */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Efecto de sombra */
+}
+
+/* Overlay circular de reproducción */
+.music-container .play-overlay {
+    position: absolute;
+    top: 47%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+/* Icono de reproducción */
+.music-container .play-overlay::before {
+    content: '▶';
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+
+/* Mostrar overlay al pasar el mouse */
+.music-container:hover .play-overlay {
+    opacity: 1;
+    background-color: rgba(23, 223, 130, 0.7); /* Fondo más oscuro */
+}
+
+/* Contenedor principal para alinear los elementos horizontalmente */
+.artista_img_wrapper {
+    display: flex; /* Usamos flexbox para alinear los elementos horizontalmente */
+    flex-wrap: nowrap; /* Asegura que los elementos no se ajusten a la siguiente línea */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin: 20px;
+}
+
+.artista_img {
+    margin-right: 20px; /* Espacio entre los elementos */
+}
+
+/* Elimina el margen del último elemento */
+.artista_img:last-child {
+    margin-right: 0;
+}
+
+
+/* Estilo para cada imagen del artista */
+.artista_img {
+    border-radius: 50%;
+    position: relative;
+    width: 150px; /* Tamaño ajustado del contenedor */
+    height: 240px; /* Altura ajustada */
+    margin: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden;
+    cursor: pointer;
+    display: inline-flex; /* Mantener el comportamiento en línea */
+    flex-direction: column; /* Los elementos dentro del contenedor se organizan en columna */
+    justify-content: flex-start; /* Alinea el contenido en la parte superior */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 20px; /* Espacio adicional debajo del texto */
+}
+
+/* Imagen dentro del contenedor */
+.artista_img img {
+    border-radius: 45%; /* Hace que la imagen sea circular */
+    width: 89%;
+    height: 90%; /* Hace que la imagen ocupe todo el contenedor circular */
+    object-fit: cover; /* Hace que la imagen se ajuste correctamente sin distorsionarse */
+    transition: transform 0.3s ease;
+}
+
+
+/* Texto debajo de la imagen */
+.artista_img p {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 10px; /* Añade un margen superior para separación */
+    padding: 0 10px; /* Añade un poco de espacio a los lados del texto */
+}
+
+/* Efecto al pasar el mouse sobre la imagen */
+.artista_img:hover img {
+    transform: scale(1.05); /* Efecto de aumento en la imagen */
+}
+
+.artista_img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del contenedor */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Efecto de sombra */
+}
+
+/* Overlay circular de reproducción */
+.artista_img .play-overlay {
+    position: absolute;
+    top: 47%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+/* Icono de reproducción */
+.artista_img .play-overlay::before {
+    content: '▶';
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+
+/* Mostrar overlay al pasar el mouse */
+.artista_img:hover .play-overlay {
+    opacity: 1;
+    background-color: rgba(23, 223, 130, 0.7); /* Fondo más oscuro */
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: #121212;
+    color: white;
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Sección dentro del footer */
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+    min-width: 200px;
+}
+
+/* Títulos de las secciones dentro del footer */
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilo de los enlaces dentro de las listas */
+.footer-section ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+}
+
+.footer-section ul li {
+    display: flex; /* Hacemos que cada li se comporte como un contenedor flexible */
+    align-items: center; /* Alinea el texto e íconos verticalmente */
+    margin-bottom: 10px; /* Espacio entre los ítems */
+}
+
+.footer-section ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    margin-right: 10px; /* Espacio entre el enlace y el ícono social */
+}
+
+/* Contenedor de los íconos sociales */
+.footer-social {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-social img {
+    margin-right: 10px; /* Espacio entre los íconos */
+    width: 25px;
+    height: 25px;
+    transition: opacity 0.3s;
+}
+
+/* Elimina el margen del último ícono */
+.footer-social img:last-child {
+    margin-right: 0;
+}
+
+/* Efecto hover en los íconos sociales */
+.footer-social img:hover {
+    opacity: 0.7;
+}
+
+/* Contenedor de derechos de autor */
+.footer-bottom {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: center;
+    gap: 10px; /* Espacio entre los íconos y el texto de derechos */
+    margin-top: 20px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+/* Responsividad: cuando el ancho de la pantalla sea menor a 768px */
+@media (max-width: 768px) {
+    .footer-social {
+        justify-content: center; /* Centra los íconos sociales en pantallas pequeñas */
+    }
+    
+    .footer-bottom {
+        flex-direction: row; /* Asegura que el texto de derechos esté al lado de los íconos */
+        text-align: center;
+    }
+}

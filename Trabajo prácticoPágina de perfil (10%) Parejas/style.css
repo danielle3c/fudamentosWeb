@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#nav {
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 7px;
+}
+.three{
+    color: white;
+}
+
+.two{
+    color:white;
+}
+
+.one{
+    color:white;
+}
+a:hover {
+    color: #fefefe;
+}
+
+a {
+    text-decoration: none;
+    color: #cfcece;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.nav-title {
+    color: white;
+    font-size: 40px;
+    margin: 10px 0px 10px 30px;
+}
+
+.btn {
+    font-size: 20px;
+    background-color: #12acc4;
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px rgb(0, 0, 0);
+    border: 4px solid black;
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-inline: 15px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.one, .two, .three, .btn {
+    margin-inline: 15px;
+}
+
+.nav-links {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 25px 30px 20px 0px;
+}
+
+.principal{
+    margin: 0 auto;
+    display: flex;
+    width: 70%;
+}
+
+.left{
+flex: 2;
+}
+.right{
+flex:1;
+}
+#container {
+    margin-top: 30px;
+    width: 500px;
+    border-radius: 5px;
+
+
+}
+
+.fondo {
+    background-color: #17a2b8;
+    width: 500px;
+    height: 120px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#perfil {
+    margin: 55px 50px;
+    height: 130px;
+}
+
+.info {
+    padding: 50px 40px;
+    padding-bottom: 10px;
+    border: 4px solid;
+    border-color: #ffffff #d3d3d3 #d3d3d3;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: -8px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#marcador {
+    height: 20px;
+    margin: 0px 5px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 17px;
+    margin: px 0px;
+}
+
+a {
+    color: #000000;
+}
+
+#engranaje {
+    height: 28px;
+    margin: -9px 0px;
+}
+
+.education{
+    padding-left: 10px;
+    margin-top: 3px;
+}
+
+.education {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    width: 500px;
+}
+
+.education h3 {
+    background-color: #333;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.education h4 {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    color: #000;
+}
+
+.education p {
+    font-size: 0.9rem;
+    color: grey;
+    margin: 5px 0;
+}
+
+
+/* Estilo general de la columna derecha */
+.right {
+    flex: 1;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+/* Estilo para la sección de conexiones */
+.Connections {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Título de la sección */
+.Connections h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #fff;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.Connections{
+    flex-direction: column;
+    justify-content: center;
+}
+/* Estilo para las solicitudes de conexión */
+.hola { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #666;
+}
+
+/* Estilo de cada usuario en la lista de solicitudes */
+.hola img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;}
+
+.hola strong {
+    flex-grow: 1;
+    margin-left: 10px;
+    color: white;
+}
+
+/* Contenedor para cada solicitud de conexión */
+.hola2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #666;
+}
+
+/* Imagenes de los usuarios */
+.hola2 img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.hola2 strong {
+    flex-grow: 1;
+    margin-left: 10px;
+    color: white;
+}
+
+/* Aceptar/Rechazar botones en la sección */
+.hola2 .buttons img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+/* Estilo general de la sección de conexiones */
+.Connections {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Título de la sección */
+.Connections h3 {
+    font-size: 1rem; /* Reducir el tamaño de la fuente */
+    margin-bottom: 10px;
+    color: #fff;
+    border-bottom: 1px solid #333;
+    padding-bottom: 3px;
+}
+
+/* Estilo de la lista de conexiones */
+.Connections ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo para cada conexión (usuario) en la lista */
+.connection {
+    display: flex;
+    align-items: center;
+    padding: 8px 0; /* Reducir el padding */
+    border-top: 1px solid #666;
+}
+
+/* Imagen de los usuarios */
+.connection img {
+    border-radius: 50%;
+    width: 40px; /* Hacer las imágenes más pequeñas */
+    height: 40px;
+    margin-right: 8px; /* Reducir el margen */
+}
+
+/* Nombre del usuario */
+.connection strong {
+    flex-grow: 1;
+    margin-left: 8px; /* Reducir el margen entre la imagen y el texto */
+    color: white;
+    font-size: 0.9rem; /* Reducir el tamaño del texto */
+}

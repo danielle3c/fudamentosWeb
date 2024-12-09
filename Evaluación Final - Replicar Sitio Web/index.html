@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="icon" href="img/spotify.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--esta es la seccion de el buscador-->
+
+<body>
+    <div class="pagina">
+        <header class="banner">
+
+            <img src="img/file.png" alt="Logo Spotify" class="logo">
+            <img src="img/Captura.PNG" alt="home" class="home">
+            <div class="search-bar">
+                <img src="img/lupa.png" alt="Icono de lupa" class="search-icon">
+                <input type="text" placeholder="¿Qué quieres reproducir?">
+                <img src="img/radio.png" alt="andas-sonoras" class="search-icon">
+            </div>
+
+
+            <nav>
+                <ul class="nav-links"> <!--es para identificar mejor los enlases de la barra de busqueda-->
+                    <a href="https://www.spotify.com/cl/signup?forward_url=https%3A%2F%2Fopen.spotify.com%2Fgenre%2F0JQ5DArNBzkmxXHCqFLx2J"
+                        target="_blank">
+                        <li><a href="#">Registrarte</a></li> <!--link para registrarse-->
+                    </a>
+                    <a href="https://accounts.spotify.com/es-ES/login?continue=https%3A%2F%2Fopen.spotify.com%2Fgenre%2Fpodcasts-web"
+                        target="_blank">
+                        <li><button class="btn">Iniciar sesión</button></li> <!--boton iniciar sesion de spotify-->
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <!--esta es la seccion de la biblioteca que esta en la izquierda-->
+        <section class="parte1"> <!--tanto div como section estan separando en secciones la pagina-->
+            <div class="biblioteca">
+                <li><a href="#">biblioteca</a></li>
+                <div class="listas">
+                    <h2>Crea tu primera lista</h2>
+                    <p>Es muy fácil, y te echaremos una mano.</p>
+                    <div class="btn-lista"> <!--es para identificar el boton de crear lista en el css-->
+                        <button class="btn">Crear lista</button> <!--boton crear lista-->
+                    </div>
+                </div>
+                <div class="biblioteca">
+                    <div class="listas">
+                        <h2>Encuentra pódcasts que quieres seguir</h2>
+                        <p>Re avisaremos cuando salga nuevos episodios.</p>
+                        <a href="https://open.spotify.com/genre/podcasts-web" target="_blank">
+                            <div class="btn-lista"> <!--es para identificar el boton de crear lista en el css-->
+                                <button class="btn">Explorar pódcasts</button> <!--boton crear lista-->
+                        </a>
+                    </div>
+                </div>
+                <ul class="nav-legal"> <!--crea una secion para identificar los links-->
+                    <li><a href="#">Legal</a></li>
+                    <!--esto crea los links para conseguir mas informacion acerca de la consulta-->
+                    <li><a href="#">Centro de seguridad y privacidad</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Información sobre anuncios</a></li>
+                    <li><a href="#">Accesibilidad</a></li>
+                </ul>
+                <div class="btn-espanol">
+                    <!--esto es para agregar un boton en el cual se seleccionaria el idioma de la pagina de spotify-->
+                    <button class="btn">Español de España</button>
+                </div>
+            </div>
+        </section>
+        <!--seccion artistas populares-->
+        <section class="parte2">
+            <!-- Sección Artistas Populares -->
+            <div class="artistas">
+                <h1>Artistas populares</h1>
+                <div class="artista_img">
+                    <a href="https://open.spotify.com/intl-es/artist/0lAWpj5szCSwM4rUMHYmrr" target="_blank">
+                        <img src="img/maneskin.png" alt="Maneskin">
+                        <div class="play-overlay"></div>
+                        <p>Maneskin</p>
+                    </a>
+                </div>
+
+
+                <div class="artista_img">
+                    <a href="https://open.spotify.com/intl-es/artist/5H1nN1SzW0qNeUEZvuXjAj" target="_blank">
+                        <img src="img/dannyocean.png" alt="Danny Ocean">
+                        <div class="play-overlay"></div>
+                        <p>Danny Ocean</p>
+                    </a>
+
+                </div>
+                <div class="artista_img">
+                    <a href="https://open.spotify.com/intl-es/artist/5sM0rohMauU34KstMcmrw9" target="_blank">
+                        <img src="img/meltedicecream.png" alt="Melted Ice Cream">
+                        <div class="play-overlay"></div>
+                        <p>Melted Ice Cream</p>
+                    </a>
+                </div>
+                <div class="artista_img">
+                    <a href="https://open.spotify.com/intl-es/artist/1bAftSH8umNcGZ0uyV7LMg" target="_blank">
+                        <img src="img/duki.png" alt="Duki">
+                        <div class="play-overlay"></div>
+                        <p>Duki</p>
+                    </a>
+                </div>
+                <div class="artista_img">
+                    <a href="https://open.spotify.com/intl-es/artist/6pNgnvzBa6Bthsv8SrZJYl" target="_blank">
+                        <img src="img/hatsunemiku.png" alt="Hatsune Miku">
+                        <div class="play-overlay"></div>
+                        <p>Hatsune Miku</p>
+
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sección Álbumes Populares -->
+            <section class="album">
+                <h2>Álbumes populares</h2>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/intl-es/album/0jV32pIk8l3vTaU3thTaW2" target="_blank">
+                        <img src="img/arcane.png" alt="Arcane">
+                        <div class="play-overlay"></div>
+                        <p>Arcane League of Lengends (Soundtrack From..)</Legend>
+                        </p>
+                    </a>
+                </div>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/intl-es/track/5lXKHJ3kYg9aM0TdBgaZBe" target="_blank">
+                        <img src="img/ameri.png" alt="Ameri">
+                        <div class="play-overlay"></div>
+                        <p>Ameri</p>
+                    </a>
+                </div>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/intl-es/album/5hIOd0FvjlgG4uLjXHkFWI" target="_blank">
+                        <img src="img/conangray.png" alt="Conan Gray">
+                        <div class="play-overlay"></div>
+                        <p>superache</p>
+                    </a>
+                </div>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/intl-es/album/5hIOd0FvjlgG4uLjXHkFWI" target="_blank">
+                        <img src="img/mothermother.png" alt="Mother Mother">
+                        <div class="play-overlay"></div>
+                        <p>O My Heart</p>
+                    </a>
+                </div>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/intl-es/album/0A8ZqtXcWghow5812T1xdg" target="_blank">
+                        <img src="img/thefrontbottoms.png" alt="thefrontbottoms">
+                        <div class="play-overlay"></div>
+                        <p>Rose</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Sección Estaciones Populares -->
+            <section class="emisoras">
+                <h1>Estaciones populares</h1>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1E4nFteSkv4Bq7" target="_blank">
+                        <img src="img/emisorachayane.PNG" alt="Chayane">
+                        <div class="play-overlay"></div>
+
+                        <p>Con Sin Bandera, Franco De Vita, Camil...</p>
+                    </a>
+                </div>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1E4vTHVDH1FT3Y" target="_blank">
+                        <img src="img/estacionbrunomars.PNG" alt="Estación Bruno Mars">
+                        <div class="play-overlay"></div>
+                        <p>Con Maroon 5, Katy Perry, Adele y más</p>
+                    </a>
+                </div>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1E4vTHVDH1FT3Y" target="_blank">
+                        <img src="img/estacioncoldplay.PNG" alt="Estación Coldplay">
+                    </a>
+                    <div class="play-overlay"></div>
+                    <p>Con Harry Styles, Maroon 5, Bruno Mars...</p>
+                </div>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1E4pZCkdbI2Wcu" target="_blank">
+                        <img src="img/estacionlosbunkers.PNG" alt="Estación Los Bunkers">
+                        <div class="play-overlay"></div>
+                        <p>Los Prisioneros, Los Tres, Enjambre y más</p>
+                    </a>
+                </div>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1E4EmpU4U97ROp" target="_blank">
+                        <img src="img/estacionsamsmith.PNG" alt="Estación Sam Smith">
+                        <p>Con Lewis Capaldi, Adele, Harry Styles y más</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Sección Listas Destacadas -->
+            <section class="listas-seleccionadas">
+                <h2>Listas Destacadas</h2>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/playlist/37i9dQZEVXbNG2KDcFcKOF" target="_blank">
+                        <img src="img/topcancionesglobal.PNG" alt="Top Canciones Global">
+                        <div class="play-overlay"></div>
+                        <p>Tu actualización semanal de las canciones más escuchadas...</p>
+                    </a>
+                </div>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/playlist/37i9dQZEVXbLp5XoPON0wI" target="_blank">
+                        <img src="img/topcacionesestadosunidos.PNG" alt="Top Canciones Estados Unidos">
+                        <div class="play-overlay"></div>
+                        <p>Tu actualización semanal de las canciones más escuchadas...</p>
+                    </a>
+                </div>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/playlist/37i9dQZEVXbMDoHDwVN2tF" target="_blank">
+                        <img src="img/top50global1.PNG" alt="Top 50 Global">
+                        <div class="play-overlay"></div>
+                        <p>Tu actualización diaria de las canciones más escuchadas...</p>
+                    </a>
+                </div>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/playlist/37i9dQZEVXbKuaTI1Z1Afx" target="_blank">
+                        <img src="img/viral50usa.PNG" alt="Viral 50 USA">
+                        <div class="play-overlay"></div>
+                        <p>Tu actualización diaria de las canciones más escuchadas...</p>
+                    </a>
+                </div>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/playlist/37i9dQZEVXbL0GavIqMTeb" target="_blank">
+                        <img src="img/viral50global.PNG" alt="Viral 50 chile">
+                        <div class="play-overlay"></div>
+                    </a>
+                    <p>Tu actualización diaria de las canciones más escuchadas...</p>
+                </div>
+            </section>
+
+            <!-- Sección Playlists from our Editors -->
+            <section class="playlists">
+                <h2>Playlists from our Editors</h2>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M" target="_blank">
+                        <img src="img/todaystophits.PNG" alt="Today's Top Hits">
+                        <div class="play-overlay"></div>
+                        <p>The most listened to hits this day</p>
+                    </a>
+                </div>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1DWWQRwui0ExPn" target="_blank">
+                        <img src="img/lofibeats.PNG" alt="Lofi Beats">
+                        <div class="play-overlay"></div>
+                        <p>The most listening lofis</p>
+                    </a>
+                </div>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1DX4UtSsGT1Sbe" target="_blank">
+                        <img src="img/allout80s.PNG" alt="All Out 80s">
+                        <div class="play-overlay"></div>
+                    </a>
+                    <p>The best of 80s music</p>
+
+                </div>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1DWV7EzJMK2FUI" target="_blank">
+                        <img src="img/jazzinthebackground.PNG" alt="Jazz in the Background">
+                        <div class="play-overlay"></div>
+                        <p>Jazz music to relax at home</p>
+                    </a>
+                </div>
+                <div class="music-container">
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1DWXe9gFZP0gtP" target="_blank">
+                        <img src="img/stressrelief.PNG" alt="Stress Relief">
+                        <div class="play-overlay"></div>
+                        <p>Music to relieve stress and relax</p>
+                    </a>
+                </div>
+            </section>
+        </section>
+
+
+        <!--seccion compañia, comunidades, enlaces utiles, planes de spotify, etc-->
+        <footer class="footer">
+            <div class="footer-section">
+                <h3>Empresa</h3>
+                <ul> <!--seccion de links informativos-->
+                    <li><a href="#">Acerca de</a></li> <!--links para conseguir informacion especifica de la pagina-->
+                    <li><a href="#">Empleo</a></li>
+                    <li><a href="#">Form the Record</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Comunidades</h3>
+                <ul>
+                    <li><a href="#">Para artistas</a></li>
+                    <li><a href="#">Desarrolladores</a></li>
+                    <li><a href="#">Publicidad</a></li>
+                    <li><a href="#">Inversores</a></li>
+                    <li><a href="#">Proveedores</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Planes de Spotify</h3>
+                <ul>
+                    <li><a href="#">Premium Individual</a></li>
+                    <li><a href="#">Premium Dual</a></li>
+                    <li><a href="#">Premium Familiar</a></li>
+                    <li><a href="#">Premium para Estudiantes</a></li>
+                    <li><a href="#">Spotify Free</a></li>
+                </ul>
+
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/Spotify/?locale=es_LA" target="_blank"></a>
+                    <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+
+                    <a href="https://x.com/Spotify" target="_blank">
+                        <img src="img/twitter (2).png" alt="Twitter"></a>
+
+                    <a href="https://www.instagram.com/spotify/" target="_blank">
+                        <img src="img/instagram.png" alt="Instagram"></a>
+
+
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 Spotify AB. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+    </section>
+</body>
+
+</html>
