@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Iniciar sesión | Consalud</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <!-- Encabezado -->
+    <header>
+        <img src="img/Logo-CN.avif" alt="Logo Consalud" class="logo">
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="login">
+            <h2>Ingresa a tu <span class="color">Consalud</span></h2>
+            <p>¡Haz tus trámites más simples!</p>
+
+            <form>
+                <label for="rut">RUT</label>
+                <input type="text" id="rut" placeholder="12.345.678-9" required>
+
+                <label for="clave">Clave</label>
+                <input type="password" id="clave" placeholder="********" required>
+
+                <div class="acciones">
+                    <a href="#" class="forgot-password">¿Olvidaste tu clave?</a>
+                    <a href="#" class="huella">Ingresar con huella</a>
+                </div>
+
+                <button type="submit" class="btn-ingresar">Ingresar</button>
+            </form>
+        </section>
+
+        <section class="informacion">
+            <img src="img/hola.PNG" alt="Consalud Mobile">
+            <img src="img/Captura3.PNG" alt="Consalud Mobile">
+            <img src="img/Captura.PNG" alt="Consalud Mobile">
+            <h3>¡Bienvenido a tu Sucursal Digital!</h3>
+            <p>Instala Consalud Mobile en tu teléfono y realiza tus trámites de forma rápida y segura.</p>
+            <a href="#" class="btn-descarga">¿Cómo instalar Consalud Mobile?</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Consalud. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
